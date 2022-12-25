@@ -46,27 +46,27 @@
 // | F12 | F07 | F08 | F09 |     |   |     |     |     |     |     |
 // | F11 | F04 | F05 | F05 | BUP |   | PRV | VUP | VDO | NXT |     |
 // | F10 | F01 | F02 | F03 | BDO |   |     |     |     |     |     |
-//             | MNU | SPC | TAB |   | MST | PLA | MUT |
+//             | MNU | SPC | TAB |   | MUT | PLA |     |
       bindings = <
-&kp F12 &kp F7 &kp F8     &kp F9    &none            &none       &none        &none        &none      &none
-&kp F11 &kp F4 &kp F5     &kp F6    &kp C_BRI_INC    &kp K_PREV  &kp K_VOL_UP &kp K_VOL_DN &kp K_NEXT &none
-&kp F10 &kp F1 &kp F2     &kp F3    &kp C_BRI_DEC    &none       &none        &none        &none      &none
-               &kp C_MENU &kp SPACE &kp TAB          &kp K_STOP2 &kp K_PP     &kp K_MUTE
+&kp F12 &kp F7 &kp F8      &kp F9    &none            &none       &none        &none        &none      &none
+&kp F11 &kp F4 &kp F5      &kp F6    &kp C_BRI_INC    &kp C_PREV  &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &none
+&kp F10 &kp F1 &kp F2      &kp F3    &kp C_BRI_DEC    &none       &none        &none        &none      &none
+               &kp K_CMENU &kp SPACE &kp TAB          &kp K_MUTE  &kp C_PP     &none
       >;
     };
 
     middle_layer {
       label = "MIDDLE";
 // ------------------------------------------------------------------
-// |  [  |  7  |  8  |  9  |  ]  |   | RDO | PST | CPY | CUT | UDO |
+// |  [  |  7  |  8  |  9  |  ]  |   |     |     |     |     |     |
 // |  ;  |  4  |  5  |  6  |  =  |   |  L  |  D  |  U  |  R  | CAP |
 // |  `  |  1  |  2  |  3  |  \  |   | HOM | PGD | PGU | END | INS |
 //             |  .  |  0  |  -  |   | RET | BSP | DEL |
       bindings = <
-&kp LBKT  &kp N7 &kp N8  &kp N9 &kp RBKT     &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO
-&kp SEMI  &kp N4 &kp N5  &kp N6 &kp EQUAL    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT    &kp CAPS
-&kp GRAVE &kp N1 &kp N2  &kp N3 &kp BSLH     &kp HOME      &kp PG_DN      &kp PG_UP     &kp END      &kp INS
-                 &kp DOT &kp N0 &kp MINUS    &kp RET       &kp BSPC       &kp DEL
+&kp LBKT  &kp N7 &kp N8  &kp N9 &kp RBKT     &none    &none     &none     &none     &none
+&kp SEMI  &kp N4 &kp N5  &kp N6 &kp EQUAL    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPS
+&kp GRAVE &kp N1 &kp N2  &kp N3 &kp BSLH     &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp INS
+                 &kp DOT &kp N0 &kp MINUS    &kp RET  &kp BSPC  &kp DEL
       >;
     };
 
