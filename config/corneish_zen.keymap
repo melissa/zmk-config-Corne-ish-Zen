@@ -44,12 +44,12 @@
       label = "OUTER";
 // ------------------------------------------------------------------
 // | F12 | F07 | F08 | F09 |     |   |     |     |     |     |     |
-// | F11 | F04 | F05 | F05 | BUP |   | PRV | VUP | VDO | NXT |     |
+// | F11 | F04 | F05 | F05 | BUP |   | PRV | VDN | VUP | NXT |     |
 // | F10 | F01 | F02 | F03 | BDO |   |     |     |     |     |     |
 //             | MNU | SPC | TAB |   | MUT | PLA |     |
       bindings = <
 &kp F12 &kp F7 &kp F8      &kp F9    &none            &none       &none        &none        &none      &none
-&kp F11 &kp F4 &kp F5      &kp F6    &kp C_BRI_INC    &kp C_PREV  &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &none
+&kp F11 &kp F4 &kp F5      &kp F6    &kp C_BRI_INC    &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &none
 &kp F10 &kp F1 &kp F2      &kp F3    &kp C_BRI_DEC    &none       &none        &none        &none      &none
                &kp K_CMENU &kp SPACE &kp TAB          &kp K_MUTE  &kp C_PP     &none
       >;
